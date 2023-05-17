@@ -8,10 +8,10 @@ public abstract class Alojamiento implements Serializable, Comparable<Alojamient
 
     protected String nombre;
     protected String provincia;
-    protected int precioHabitacion;
+    protected double precioHabitacion;
     protected List<Integer> valoraciones;
 
-    public Alojamiento(String nombre, String provincia, int precioHabitacion, List<Integer> valoraciones) {
+    public Alojamiento(String nombre, String provincia, double precioHabitacion, List<Integer> valoraciones) {
         this.nombre = nombre;
         this.provincia = provincia;
         this.precioHabitacion = precioHabitacion;

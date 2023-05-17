@@ -8,7 +8,7 @@ public class CasaRural extends Alojamiento implements Serializable{
 
     private boolean piscina;
 
-    public CasaRural(String nombre, String provincia, int precioHabitacion, List<Integer> valoraciones, boolean piscina) {
+    public CasaRural(String nombre, String provincia, double precioHabitacion, List<Integer> valoraciones, boolean piscina) {
         super(nombre, provincia, precioHabitacion, valoraciones);
         this.piscina = piscina;
     }
