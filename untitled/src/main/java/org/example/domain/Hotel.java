@@ -6,19 +6,18 @@ import java.util.List;
 
 import static org.example.common.Comprobar.categoriaOk;
 
-public class Hotel extends Alojamientos{
+public class Hotel extends Alojamiento {
 
-    private String categoria;
+    private int categoria;
 
-    public Hotel(String nombre, String provincia, int precioHabitacion, List<Double> valoraciones, String categoria) throws CategoriaException {
+    public Hotel(String nombre, String provincia, int precioHabitacion, List<Integer> valoraciones, int categoria) throws CategoriaException {
         super(nombre, provincia, precioHabitacion, valoraciones);
         categoriaOk(categoria);
         this.categoria = categoria;
     }
 
-    public Hotel(String nombre, String provincia, int precioHabitacion, String categoria) throws CategoriaException {
-        super(nombre, provincia, precioHabitacion);
-        categoriaOk(categoria);
-        this.categoria = categoria;
+    @Override
+    public int compareTo(Alojamiento o) {
+        return 0;
     }
 }

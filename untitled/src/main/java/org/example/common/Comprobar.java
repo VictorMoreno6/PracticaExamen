@@ -1,11 +1,10 @@
 package org.example.common;
 
 public class Comprobar {
-    public static void categoriaOk(String categoria) throws CategoriaException {
+    public static void categoriaOk(int categoria) throws CategoriaException {
        boolean esta= false;
-       Categoria aux[] = Categoria.values();
-        for (int i = 0; i < aux.length; i++) {
-            if (aux[i].toString().equalsIgnoreCase(categoria))
+        for (int i = 1; i < 6; i++) {
+            if (categoria==i)
                 esta=true;
         }
         if (!esta)
